@@ -190,20 +190,21 @@ body {
 
 
     @media screen and (max-width: 768px) {
-        /* .sideBarNav{
-            width: 22%;
-            justify-content: space-between;
-            
-        }
-        .sideBarOuter {
-            padding: 0 !important;
-        }
-        .sideBarInner {
-            padding: 0 !important;
-            margin-top: 50px;
-        } */
+     .fa-bars,.fa-x{
 
-        .home-content ,.ing,.categories ,.searchSection,.instructions,.category-desc {
+
+       color: white;
+     }
+        .sideBarOuter {
+
+background-color: rgba(248, 248, 248, 0) !important;
+
+
+            }
+            .sideBarOuter img {
+                display: none;
+            }
+ .ing,.categories ,.instructions,.category-desc {
             padding: 0 80px;
         }
         .myForm input,.inner-btn {
@@ -213,4 +214,14 @@ body {
         
         }
       
+      .home-content{
+padding: 0 40px;
+      }
+      .sideBarNav{
+        width: 55%;
+        background-color: rgba(0, 0, 0, 0.355) !important;
+      }
+      .searchInput{
+        width: 100% !important;
+      }
     }

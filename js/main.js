@@ -70,6 +70,7 @@ $("#searchBtn").click (function() {
 
    $(".home-content").removeClass("show")
    $(".home-content").addClass("hide")
+   $("")
    $(".searchSection").addClass("show").nextAll().removeClass("show").addClass("hide")
 
    closeNav()
