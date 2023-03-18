@@ -74,7 +74,7 @@
         
         <div class="container">
      
-            <div class="row mt-5" id="myRow">
+            <div class="row mt-5 px-5" id="myRow">
               
             </div>
         </div>
@@ -83,13 +83,25 @@
 
     <section class="searchSection hide mt-4">
         <div class="container m-auto ">
-            <input type="text" class="form form-control searchInput text-white" placeholder="Search By Name" id="searchByName">
-            <input type="text" class="form form-control searchInput text-white" placeholder="Search By First Letter" id="searchByLetter" maxlength="1">
-        </div>
+           <div class="row ">
+            <div class="col-md-6 ">
+                <div class="inner m-auto">
+                    <input type="text" class="form form-control searchInput text-white" placeholder="Search By Name" id="searchByName">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="inner m-auto">
+                    <input type="text" class="form form-control searchInput text-white" placeholder="Search By First Letter" id="searchByLetter" maxlength="1">
+
+                </div>
+            </div>
+            </div>
+           </div>
 
         <div class="container">
      
-            <div class="row mt-5" id="searchedMeals">
+            <div class="row mt-5 " id="searchedMeals">
                 
             </div>
         </div>
@@ -151,7 +163,7 @@
 
 <section class="contactUs hide">
 <div class="container ">
-    <form action="">
+    <form action="" class="myForm">
         <div class="row mt-5">
             <div class="col-md-6">
                 <input type="text" class="form-control mt-3" placeholder="enter your name">
@@ -193,7 +205,12 @@
                     <li>Password Is not matching</li>
                  </ul>
             </div>
-            <div class="col-md-1  m-auto">            <button disabled class="btn btn-outline-danger mt-3 " id="formBtn">submit</button>
+            <div class="col-md-1  m-auto">        
+                
+                <div class="inner-btn">
+                    <button disabled class="btn btn-outline-danger mt-3 " id="formBtn">submit</button>
+
+                </div>
             </div>
         </div>
 

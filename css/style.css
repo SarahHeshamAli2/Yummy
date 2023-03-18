@@ -190,7 +190,7 @@ body {
 
 
     @media screen and (max-width: 768px) {
-        .sideBarNav{
+        /* .sideBarNav{
             width: 22%;
             justify-content: space-between;
             
@@ -201,5 +201,16 @@ body {
         .sideBarInner {
             padding: 0 !important;
             margin-top: 50px;
+        } */
+
+        .home-content ,.ing,.categories ,.searchSection,.instructions,.category-desc {
+            padding: 0 80px;
         }
+        .myForm input,.inner-btn {
+            width: 50%;
+            margin: auto;
+
+        
+        }
+      
     }

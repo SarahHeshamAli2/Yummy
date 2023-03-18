@@ -12,7 +12,7 @@ let dishesDiv = ``
 
 for (let i=0 ; i<dishesArray.length;i++) {
 
-    dishesDiv += `  <div class="col-md-3 mb-3" >
+    dishesDiv += `  <div class="col-md-3 mb-3 col-sm-6" >
     <div  onclick="mealInstructions(${dishesArray[i].idMeal})"   class="dish-content position-relative overflow-hidden" >
         <img src=${dishesArray[i].strMealThumb} alt="" class="w-100 ">
         <div class="dish-layer d-flex align-items-center">
@@ -116,7 +116,7 @@ async function  displaySearchedProducts () {
     let cartona = ``
 
     for (let i=0 ; i<searchedMeals.length;i++ ) {
-        cartona += `<div class="col-md-3 mb-3">
+        cartona += `<div class="col-md-3 mb-3 col-sm-6">
         <div class="dish-content position-relative overflow-hidden "   onclick="mealInstructions(${searchedMeals[i].idMeal})">
             <img src=${searchedMeals[i].strMealThumb} alt="" class="w-100 ">
             <div class="dish-layer d-flex align-items-center">
@@ -165,7 +165,7 @@ function searchByFirstLetter (searchLetter) {
     let cartona = ``
 
     for (let i=0 ; i<myFirstLetterMeal.length;i++ ) {
-        cartona += `<div class="col-md-3 mb-3">
+        cartona += `<div class="col-md-3 mb-3 col-sm-6">
         <div class="dish-content position-relative overflow-hidden "   onclick="mealInstructions(${myFirstLetterMeal[i].idMeal})">
             <img src=${myFirstLetterMeal[i].strMealThumb} alt="" class="w-100 ">
             <div class="dish-layer d-flex align-items-center">
@@ -192,17 +192,7 @@ $("#catgBtn").click(function() {
     $(".categories").addClass("show").nextAll().removeClass("show").addClass("hide")
 
 
-//     $(".category-desc").removeClass("show")
-//     $(".category-desc").addClass("hide")
-//     $(".instructions").removeClass("show")
-//     $(".instructions").addClass("hide")
-//     $(".area").removeClass("show")
-// $(".area").addClass("hide")
-// $(".ing").removeClass("show")
-// $(".ing").addClass("hide")
-// $(".contactUs").removeClass("show").addClass("hide")
 
-  
    
    
     closeNav()
@@ -239,7 +229,7 @@ for (let i =0 ; i< myCategories.length ;i++) {
 
 
     cartona += `
-    <div class="col-md-3 mb-3" >
+    <div class="col-md-3 mb-3 col-sm-6" >
     <div class="ctg-content position-relative overflow-hidden"onclick="categoryDesc('${myCategories[i].strCategory}')" >
         <img src=${myCategories[i].strCategoryThumb} alt="" class="w-100 ">
         <div class="ctg-layer text-center">
@@ -280,7 +270,7 @@ function displayCatgeoryDesc (arr) {
 let cartona = ` `
 for(let i=0 ; i<arr.length ; i++) {
 
-    cartona += `  <div class="col-md-3 mb-3">
+    cartona += `  <div class="col-md-3 mb-3 col-sm-6">
     <div class="dish-content position-relative overflow-hidden " onclick="mealInstructions('${arr[i].idMeal}')" >
         <img src=${arr[i].strMealThumb} alt="" class="w-100 ">
         <div class="dish-layer d-flex align-items-center">
@@ -440,7 +430,7 @@ let cartona = ``
 for(let i=0 ; i<arr.length;i++) {
 
 
-    cartona+= ` <div class="col-md-3 mt-2">
+    cartona+= ` <div class="col-md-3 mt-2 col-sm-6">
     <div class="inner-area text-white text-center curson" onclick='detailAreaMeal("${arr[i].strArea}")' >
         <i class="fa-solid fa-house-laptop fa-5x"></i>
         <h4>${arr[i].strArea}</h4>
@@ -463,6 +453,7 @@ $("#areaBtn").click(function(){
     $(".searchSection").removeClass("show")
     $(".searchSection").addClass("hide")
      $(".categories").removeClass("show").addClass("hide")
+     $(".category-desc").removeClass("show").addClass("hide")
     $(".area").addClass("show").removeClass("hide").nextAll().removeClass("show").addClass("hide")
 
 
@@ -511,7 +502,7 @@ let cartona = ``
 
 for(let i=0 ; i<20 ; i++) {
 
-cartona += ` <div class="col-md-3 mt-3 me-2 curson">
+cartona += ` <div class="col-md-3 mt-3 me-2 curson col-sm-6">
 <div class="inner-ing" onclick="getIngDetails('${arr[i].strIngredient}')">
     <i class="fa-solid fa-drumstick-bite fa-4x"></i>
     <h1>${arr[i].strIngredient}</h1>
