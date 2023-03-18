@@ -70,23 +70,16 @@ $("#searchBtn").click (function() {
 
    $(".home-content").removeClass("show")
    $(".home-content").addClass("hide")
-   $(".searchSection").addClass("show")
-   $(".categories").removeClass("show").addClass("hide")
-   $(".category-desc").removeClass("show")
-   $(".category-desc").addClass("hide")
-   $(".instructions").removeClass("show")
-   $(".instructions").addClass("hide")
-   $(".area").removeClass("show")
-   $(".area").addClass("hide")
-   $(".ing").removeClass("show")
-   $(".ing").addClass("hide")
-   $(".contactUs").removeClass("show").addClass("hide")
+   $(".searchSection").addClass("show").nextAll().removeClass("show").addClass("hide")
+
+   closeNav()
+
+
    $(".loading").fadeOut(300)
 
 
 
 
-   closeNav()
 })
 
 
@@ -196,16 +189,18 @@ $("#catgBtn").click(function() {
    $(".home-content").addClass("hide")
    $(".searchSection").removeClass("show")
     $(".categories").removeClass("hide")
-    $(".categories").addClass("show")
-    $(".category-desc").removeClass("show")
-    $(".category-desc").addClass("hide")
-    $(".instructions").removeClass("show")
-    $(".instructions").addClass("hide")
-    $(".area").removeClass("show")
-$(".area").addClass("hide")
-$(".ing").removeClass("show")
-$(".ing").addClass("hide")
-$(".contactUs").removeClass("show").addClass("hide")
+    $(".categories").addClass("show").nextAll().removeClass("show").addClass("hide")
+
+
+//     $(".category-desc").removeClass("show")
+//     $(".category-desc").addClass("hide")
+//     $(".instructions").removeClass("show")
+//     $(".instructions").addClass("hide")
+//     $(".area").removeClass("show")
+// $(".area").addClass("hide")
+// $(".ing").removeClass("show")
+// $(".ing").addClass("hide")
+// $(".contactUs").removeClass("show").addClass("hide")
 
   
    
@@ -467,19 +462,9 @@ $("#areaBtn").click(function(){
     $(".home-content").addClass("hide")
     $(".searchSection").removeClass("show")
     $(".searchSection").addClass("hide")
-     $(".categories").removeClass("hide")
-     $(".categories").addClass("hide")
-     $(".categories").removeClass("show")
-     $(".category-desc").addClass("hide")
-     $(".category-desc").removeClass("show")
-     $(".instructions").addClass("hide")
-     $(".instructions").removeClass("show")
- 
-    $(".area").addClass("show")
-    $(".area").removeClass("hide")
-    $(".ing").removeClass("show")
-$(".ing").addClass("hide")
-$(".contactUs").removeClass("show").addClass("hide")
+     $(".categories").removeClass("show").addClass("hide")
+    $(".area").addClass("show").removeClass("hide").nextAll().removeClass("show").addClass("hide")
+
 
   
     closeNav()
